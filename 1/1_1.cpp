@@ -1,6 +1,6 @@
 #include <iostream>
 
-void swap(int& a, int& b) { // функци€ перестановки местами дл€ сортировки пузырьком.
+void swap(int& a, int& b) { // functia dlya perestanovki i sortirovki puzirkom.
 	int temp = a;
 	a = b;
 	b = temp;
@@ -8,7 +8,7 @@ void swap(int& a, int& b) { // функци€ перестановки местами дл€ сортировки пузыр
 
 int main()
 {
-	const int size = 50; // visual studio с типами, кроме const не работает при создании массивов.
+	const int size = 50; // visual studio s tipami krome const pri sozdanii massivov ne rabotaet.
 	int mas[size];
 	int maxel = -1;
 
@@ -25,7 +25,7 @@ int main()
 				swap(mas[sortmasj], mas[sortmasj + 1]);
 			}
 		}
-	} // сортировка пузырьком.
+	} // sortirovka puzirkom.
 
 	for (int j = 0; j < size; j++) {
 		std::cout << mas[j] << ' ';
